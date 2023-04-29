@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1352738742108005085}
   - component: {fileID: 1352738742108005086}
   - component: {fileID: 1352738742108005087}
+  - component: {fileID: 8265597904822433323}
   m_Layer: 0
   m_Name: doctor3
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 965c67161a1ec4cf9bcd9dcd98d4bbb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,6 +98,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc9d0d4ec372471aace1becbdd17e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &8265597904822433323
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352738742108005084}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.008607268}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.76529074, y: 2.2973602}
+  m_EdgeRadius: 0
 --- !u!1 &1352738742603138270
 GameObject:
   m_ObjectHideFlags: 0
