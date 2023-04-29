@@ -12,10 +12,10 @@ public class gun_rotation : MonoBehaviour
     void Update(){
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        print(abs(angle));
-        if(-90 => angle >= 90){
+        if(angle >= 90){
             rnderer.flipY = true;
-        }else if(-90 <= angle <= 90){
+        }
+        else if(angle >= -90){
             rnderer.flipY = false;
         }
     }
