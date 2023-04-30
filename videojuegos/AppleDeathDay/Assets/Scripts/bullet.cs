@@ -8,4 +8,19 @@ public class bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.gameObject.GetComponent<enemy_movement>() != null)
+        {
+            
+            if (GameObject.Find("Score").GetComponent<score_>())
+            {
+                score_.scoreValue += 10;
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
+            }
+       }
+    }
 }

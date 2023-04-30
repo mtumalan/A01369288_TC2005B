@@ -23,6 +23,8 @@ public class enemy_movement : MonoBehaviour
         direction.Normalize();
         movement = direction;
     }
+    
+    
     private void FixedUpdate() {
         moveCharacter(movement);
     }

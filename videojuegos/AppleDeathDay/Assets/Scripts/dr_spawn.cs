@@ -24,4 +24,5 @@ public class dr_spawn : MonoBehaviour
         Instantiate(enemy, newPos3, Quaternion.identity);
         Instantiate(enemy, newPos4, Quaternion.identity);
     }
+
 }
