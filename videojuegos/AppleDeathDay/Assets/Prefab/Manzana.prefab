@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1952c98be1ac59f4eaec839c08b72ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  disparo: {fileID: 0}
+  fireForce: 20
 --- !u!1 &1226637771447812046
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,10 +59,11 @@ GameObject:
   - component: {fileID: 1226637771447812083}
   - component: {fileID: 1226637771447812045}
   - component: {fileID: 1226637771447812044}
+  - component: {fileID: 7868772253390230962}
   - component: {fileID: 1226637771447812047}
   m_Layer: 0
   m_Name: Manzana
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +122,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7868772253390230962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226637771447812046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d6d22cc9f1c4d57ad17822bad55fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health_: 0
 --- !u!114 &1226637771447812047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226637771837280105}
   - component: {fileID: 1226637771837280110}
+  - component: {fileID: 6940562715087298517}
   m_Layer: 0
   m_Name: apple1
   m_TagString: Untagged
@@ -215,6 +234,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6940562715087298517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226637771837280104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d6d22cc9f1c4d57ad17822bad55fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health_: 0
 --- !u!1 &1226637771951539269
 GameObject:
   m_ObjectHideFlags: 0
