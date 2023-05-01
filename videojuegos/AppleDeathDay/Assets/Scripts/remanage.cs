@@ -2,13 +2,15 @@
 //using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class remanage : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TextMeshProUGUI restart;
+    public GameObject sc;
     void Start()
     {
-        
+        restart.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,7 +23,11 @@ public class remanage : MonoBehaviour
     {
         if(health.health_ <= 0)
         {
+            restart.gameObject.SetActive(true);
+            if (Input.GetMouseButtonDown(0)){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            score_.scoreValue = 0;
+            }   
         }
         
     }
