@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class health : MonoBehaviour
 {
@@ -11,11 +12,12 @@ public class health : MonoBehaviour
     public Sprite fullApple;
     public Sprite bittenApple;
     private GameObject c;
+    public TextMeshProUGUI gameOverText;
     // Start is called before the first frame update
     void Start()
     {
         health_ = maxHealth; 
-        
+        gameOverText.gameObject.SetActive(false);
     }
 
     public void Damage(int damage)
@@ -23,8 +25,8 @@ public class health : MonoBehaviour
         health_ -= damage;
         if (health_ <= 0)
         {
+            gameOverText.gameObject.SetActive(true);
             Destroy(gameObject);
-            
         }
     }
 
